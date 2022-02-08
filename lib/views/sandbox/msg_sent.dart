@@ -10,14 +10,12 @@ class MessagePage extends StatefulWidget {
 }
 
 class _MessagePageState extends State<MessagePage> {
-  final _formKey =GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   final _http = HttpHelper();
   final _subject = TextEditingController();
   final _content = TextEditingController();
 
-  save()async{
-
-  }
+  save() async {}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,11 +38,7 @@ class _MessagePageState extends State<MessagePage> {
             Padding(
               padding: const EdgeInsets.only(left: 15.0, right: 15.0),
               child: TextFormField(
-                controller: _content
-
-
-
-                ,
+                controller: _content,
                 maxLines: null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -59,9 +53,7 @@ class _MessagePageState extends State<MessagePage> {
                     primary: Colors.lightBlue, // background
                     onPrimary: Colors.white, // foreground
                   ),
-                  onPressed: () {
-                    if()
-                  },
+                  onPressed: () {},
                   child: Text('send'),
                 ))
           ],
@@ -69,5 +61,4 @@ class _MessagePageState extends State<MessagePage> {
   }
 }
 
-class _subjectController {
-}
+
